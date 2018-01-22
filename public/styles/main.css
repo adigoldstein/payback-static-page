@@ -1,0 +1,9 @@
+p {
+  color: red;
+  background-color: green; }
+
+@media (max-width: 1200px) {
+  body {
+    background-color: blue; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,9 +1,180 @@
-p {
-  color: red;
-  background-color: green; }
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  [Table of contents]
 
-@media (max-width: 1200px) {
-  body {
-    background-color: blue; } }
+  1) BORDER RADIUS
+  2) OPACITY
+  3) BACKGROUND GRADIENT
+  4) BOX SHADOW
+  5) TEXT SHADOW
+  6) TRANSITION
+  7) ANIMATION
+  8) TRANSFORM
+  9) DESATURATE
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* 1) BORDER RADIUS */
+/* 2) OPACITY */
+/* 3) BACKGROUND GRADIENT */
+/* 4) BOX SHADOW */
+/* 5) TEXT SHADOW */
+/* 6) TRANSITION */
+/* 7) ANIMATION */
+/* 8) TRANSFORM */
+/* 9) DESATURATE */
+/* 10) REMOVE DESATURATE */
+/* 11) CALC */
+/* 12) ORDER */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.first-section .main-img {
+  margin-left: -15px; }
+
+.first-section .first-section-text {
+  max-width: 446px; }
+  .first-section .first-section-text .main-header {
+    line-height: 45px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .first-section .first-section-text .sec-header {
+    color: #4DD365;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 15px; }
+  .first-section .first-section-text p {
+    font-size: 1.125rem;
+    letter-spacing: -0.29px;
+    line-height: 26px; }
+
+.first-section .main-img-mobile {
+  display: none; }
+
+.why-section {
+  margin-top: 60px; }
+  .why-section .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px; }
+    .why-section .why-container .img-container {
+      height: 125px; }
+    .why-section .why-container p {
+      margin: 5px 5%; }
+
+.what-users .user-review {
+  display: flex;
+  margin: 0 25% 50px; }
+  .what-users .user-review img {
+    margin-bottom: 30px; }
+  .what-users .user-review span {
+    display: block; }
+  .what-users .user-review .date {
+    font-size: 0.9375em; }
+  .what-users .user-review .user-info {
+    margin-right: 70px; }
+  .what-users .user-review p {
+    font-size: 18px;
+    line-height: 31px;
+    font-style: italic; }
+  .what-users .user-review.margin-b100 {
+    margin-bottom: 100px; }
+
+.guarantee {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .guarantee h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .guarantee p {
+    font-size: 1.25rem;
+    margin: 30px 0;
+    max-width: 400px; }
+
+.upper-span {
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
+
+.btn-div {
+  text-align: center; }
+  .btn-div a {
+    height: 63px;
+    width: 342px; }
+  .btn-div h3 {
+    letter-spacing: -0.32px;
+    font-size: 1.125rem;
+    font-weight: bold; }
+
+.hr {
+  border-top: 1px;
+  background-color: #AEADAD;
+  width: 80%;
+  height: 1px;
+  margin: 60px auto; }
+
+@media (max-width: 1230px) {
+  .main-img {
+    height: 75%; }
+  .first-section-text {
+    margin-left: 4%; } }
+
+@media (max-width: 991px) {
+  .main-img {
+    display: none; }
+  .first-section .main-img-mobile {
+    display: block;
+    margin: 30px auto 0; }
+  .first-section-text {
+    margin: 0 auto;
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  .first-section .first-section-text .main-header {
+    font-size: 2rem; }
+  .guarantee h3 {
+    font-size: 2.4rem;
+    text-align: center; } }
+
+@media (max-width: 700px) {
+  .main-img-mobile {
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  .guarantee img, .guarantee p {
+    width: 90%; } }
+
+@media (max-width: 400px) {
+  .btn-div a {
+    width: 90%; } }
+
+.btn-div a:link, .btn-div a:visited {
+  background-color: #4DD365;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  margin: 0 auto; }
+  .btn-div a:link .btn-span-text, .btn-div a:visited .btn-span-text {
+    color: white;
+    font-size: 1.625rem;
+    font-weight: bold;
+    letter-spacing: -0.74px; }
+
+.btn-div a:hover, .btn-div a:active {
+  text-decoration: none;
+  background-color: #65d679; }
 
 /*# sourceMappingURL=main.css.map */

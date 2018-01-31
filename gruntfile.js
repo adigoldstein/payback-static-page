@@ -2,7 +2,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    aws: grunt.file.readJSON('aws-keys.json'),
+
 
     jshint: {
       files: ['Gruntfile.js', 'public/js/main.js'],
@@ -60,25 +60,7 @@ module.exports = function (grunt) {
       }
     },
 
-    aws_s3: {
-      options: {
-        accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
-        secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
-        region: 'us-east-1', // http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
-        uploadConcurrency: 5, // 5 simultaneous uploads
-        downloadConcurrency: 5 // 5 simultaneous downloads
-      },
-      staging: {
-        options: {
-          bucket: 'cryptomethod.co',
-          differential: true, // Only uploads the files that have changed
-          gzipRename: 'ext' // when uploading a gz file, keep the original extension
-        },
-        files: [
-          {expand: true, cwd: 'public/', src: ['**'], dest: '/', action: 'upload'}
-        ]
-      }
-    }
+
 
   });
   grunt.loadNpmTasks('grunt-sass');
@@ -86,13 +68,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-inline');
-  // grunt.loadNpmTasks('grunt-aws-s3');
+
 
 
 
   // grunt.registerTask('build', ['jshint', 'htmlmin']);
   grunt.registerTask('build', ['inline', 'htmlmin']);
-  // grunt.registerTask('upload', ['aws_s3']);
+
 
 
 };

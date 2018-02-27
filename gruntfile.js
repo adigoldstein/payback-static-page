@@ -45,7 +45,6 @@ module.exports = function (grunt) {
         },
         files: {                                   // Dictionary of files
           'public/index.html': 'public/index.html',     // 'destination': 'source'
-          'public/better.html': 'public/better.html',     // 'destination': 'source'
         }
       },
     },

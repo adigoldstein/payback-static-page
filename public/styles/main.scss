@@ -50,7 +50,7 @@ header {
   font-size: 24px;
   color: #1E2650;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 15px;
 }
 
 nav {
@@ -71,10 +71,14 @@ nav {
       color: #DEBA7C;
       border-bottom: 2px solid #DEBA7C;
     }
+    &:hover a:link, :hover a:visited {
+      color: #DEBA7C!important;
+    }
   }
 
   .collapse.navbar-collapse {
     z-index: 1300;
+    margin-right: -94px;
     //background-color: rgba(0,0,0,0.6);
   }
 

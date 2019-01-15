@@ -69,7 +69,7 @@ header {
   font-size: 24px;
   color: #1E2650;
   letter-spacing: 0;
-  line-height: 30px; }
+  line-height: 15px; }
 
 nav {
   height: 63px; }
@@ -83,8 +83,11 @@ nav {
     nav .navbar-nav a:link:hover, nav .navbar-nav a:visited:hover {
       color: #DEBA7C;
       border-bottom: 2px solid #DEBA7C; }
+    nav .navbar-nav a:link:hover a:link, nav .navbar-nav a:link :hover a:visited, nav .navbar-nav a:visited:hover a:link, nav .navbar-nav a:visited :hover a:visited {
+      color: #DEBA7C !important; }
   nav .collapse.navbar-collapse {
-    z-index: 1300; }
+    z-index: 1300;
+    margin-right: -94px; }
   nav .nav-item {
     text-align: center; }
 
@@ -311,6 +314,10 @@ footer {
 
 ol {
   padding-left: 15px; }
+
+@media (max-width: 1300px) {
+  nav .collapse.navbar-collapse {
+    margin-right: -30px; } }
 
 @media (max-width: 991px) {
   .testimonials .car-wrapper {

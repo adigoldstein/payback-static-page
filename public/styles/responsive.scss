@@ -1,5 +1,95 @@
-@media (max-width: 1230px) {
+@media (max-width: 991px) {
 
+  header {
+    background-position-y: bottom;
+
+  }
+  header .cover {
+    width: 100%;
+    height: 558px;
+  }
+  header .cover-egde {
+    width: 120%;
+    height: 100px;
+    top: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    left: -10%;
+
+  }
+  .hero {
+    .main-header, .sub-header, .small-header {
+      text-align: center;
+    }
+  }
+  .handle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+
+    .handle-image {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header .cover {
+    height: 602px;
+  }
+
+  .navbar-dark nav .navbar-nav a:link, .navbar-dark nav .navbar-nav a:visited {
+    display: inline-block;
+  }
+  .nav-link {
+    display: inline-block;
+  }
+
+  .hero .right-input, .hero .left-input, .contact-us .right-input, .contact-us .left-input {
+    padding: 0;
+  }
+
+
+.hero .golden-box {
+  height: 602px;
+  margin-bottom: 45px;
+}
+
+.firstName {
+  margin-bottom: 12px;
+}
+
+.contact-us {
+  height: 783px;
+}
+
+.contact-us .left-input, .contact-us .mid-input {
+  margin-bottom: 12px;
+}
 
 }
 
+@media (max-width: 575px) {
+  footer .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .footer-logo {
+    margin-top: 10px;
+  }
+  footer ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero .golden-box {
+    min-width: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+}

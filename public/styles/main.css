@@ -210,6 +210,8 @@ nav {
     margin-top: 75px; }
   .testimonials .section-header {
     margin-bottom: 55px; }
+  .testimonials .car-wrapper-mobile {
+    display: none; }
   .testimonials .car-wrapper {
     max-width: 1114px;
     margin: 0 auto; }
@@ -315,9 +317,35 @@ ol {
     max-width: 333px;
     background-color: #FFFFFF;
     border: 1px solid #DAAC63;
-    box-shadow: 0 12px 14px -13px rgba(54, 48, 119, 0.5); }
+    box-shadow: 0 12px 14px -13px rgba(54, 48, 119, 0.5);
+    border-radius: 10px; }
     .testimonials .car-wrapper .testimonial-name, .testimonials .car-wrapper .testimonial-sub-header, .testimonials .car-wrapper .testimonial-text {
       color: #1E2650 !important; }
+  .testimonials .car-wrapper-desktop {
+    display: none; }
+  .testimonials .car-wrapper-mobile {
+    display: block; }
+  .slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0; }
+    .slick-dots li {
+      box-shadow: none;
+      border: none; }
+      .slick-dots li button {
+        text-indent: -9999px;
+        height: 10px;
+        width: 10px;
+        line-height: 10px;
+        margin: 0 5px;
+        padding: 0;
+        border: 1px solid #1E2650;
+        background: none;
+        border-radius: 100%; }
+    .slick-dots li.slick-active button {
+      background-color: #1E2650; }
   header {
     background-position-y: bottom; }
   header .cover {

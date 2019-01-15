@@ -13,27 +13,27 @@ $(document).ready(function () {
   });
 
 
-  // Slick :
+  // Slick carousel :
 
   $(document).ready(function () {
     $('.test-car').slick({
       autoplay: true,
       arrows: false,
-      autoplaySpeed: 12000,
+      dots: false,
+      autoplaySpeed: 1000,
       centerPadding: '10px',
       slidesToShow: 3,
       variableWidth: true,
-      // responsive: [
-      //   {
-      //     breakpoint: 991,
-      //     settings: {
-      //       arrows: false,
-      //       // centerMode: true,
-      //       centerPadding: '10px',
-      //       slidesToShow: 1
-      //     }
-      //   }
-      // ]
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            dots: true,
+            slidesToShow: 1
+
+          }
+        }
+      ]
     });
   });
 });

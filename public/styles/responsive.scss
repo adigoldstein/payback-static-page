@@ -1,5 +1,15 @@
 @media (max-width: 991px) {
 
+  .testimonials .car-wrapper {
+    max-width: 333px;
+    background-color: #FFFFFF;
+    border: 1px solid #DAAC63;
+    box-shadow: 0 12px 14px -13px rgba(54, 48, 119, 0.50);
+
+    .testimonial-name, .testimonial-sub-header, .testimonial-text {
+      color: #1E2650 !important;
+    }
+  }
   header {
     background-position-y: bottom;
 
@@ -37,6 +47,12 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0;
+    .navbar-nav {
+      background-color: #000;
+    }
+  }
   header .cover {
     height: 602px;
   }
@@ -53,26 +69,44 @@
   }
 
 
-.hero .golden-box {
-  height: 602px;
-  margin-bottom: 45px;
-}
+  .hero .golden-box {
+    height: 602px;
+    margin-bottom: 45px;
+  }
 
-.firstName {
-  margin-bottom: 12px;
-}
+  .firstName {
+    margin-bottom: 12px;
+  }
 
-.contact-us {
-  height: 783px;
-}
+  .contact-us {
+    height: 783px;
+  }
 
-.contact-us .left-input, .contact-us .mid-input {
-  margin-bottom: 12px;
-}
+  .contact-us .left-input, .contact-us .mid-input {
+    margin-bottom: 12px;
+  }
 
 }
 
 @media (max-width: 575px) {
+  header .cover {
+    height: 436px;
+  }
+  .hero .main-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero .main-header-wrapper {
+    margin-top: 40px;
+  }
+  .hero .sub-header {
+    font-size: 16px;
+    margin: 40px auto 46px;
+    max-width: 337px;
+
+  }
+
+
   footer .footer-wrapper {
     flex-direction: column;
     justify-content: center;

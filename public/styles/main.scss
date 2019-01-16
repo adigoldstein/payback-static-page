@@ -66,9 +66,10 @@ nav {
     color: #D7E1F0;
     letter-spacing: 0.43px;
     font-weight: 600;
+    padding-bottom: 6px;
 
     &:hover {
-      color: #DEBA7C;
+      color: #DEBA7C!important;
       border-bottom: 2px solid #DEBA7C;
     }
     &:hover a:link, :hover a:visited {

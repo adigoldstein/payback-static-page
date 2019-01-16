@@ -79,9 +79,10 @@ nav {
     font-size: 16px;
     color: #D7E1F0;
     letter-spacing: 0.43px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-bottom: 6px; }
     nav .navbar-nav a:link:hover, nav .navbar-nav a:visited:hover {
-      color: #DEBA7C;
+      color: #DEBA7C !important;
       border-bottom: 2px solid #DEBA7C; }
     nav .navbar-nav a:link:hover a:link, nav .navbar-nav a:link :hover a:visited, nav .navbar-nav a:visited:hover a:link, nav .navbar-nav a:visited :hover a:visited {
       color: #DEBA7C !important; }

@@ -60,7 +60,7 @@ header {
   -moz-border-radius: 100px 100px 100px 100px;
   -ms-border-radius: 100px 100px 100px 100px;
   border-radius: 100px 100px 100px 100px;
-  margin: 53px auto 20px;
+  margin: 53px auto 15px;
   background-color: #DAAC63; }
 
 .section-header {
@@ -68,8 +68,7 @@ header {
   font-weight: bold;
   font-size: 24px;
   color: #1E2650;
-  letter-spacing: 0;
-  line-height: 15px; }
+  letter-spacing: 0; }
 
 nav {
   height: 63px; }
@@ -425,6 +424,8 @@ ol {
   .hero .golden-box {
     min-width: auto;
     width: 100%;
-    border-radius: 0; } }
+    border-radius: 0;
+    padding-left: 12px;
+    padding-right: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
